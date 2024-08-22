@@ -40,10 +40,10 @@ pub fn fmt(cmd: &FmtCommand) {
 
     match cmd.status() {
         Ok(status) => if ! status.success() {
-            eprintln!("Formatter failed with exit code: {}", status);
+            eprintln!("Formatter {} failed with exit code: {}", formatter.name(), status);
         },
         Err(e) => {
-            eprintln!("Failed to execute formatter: {}", e);
+            eprintln!("Failed to execute {}: {}", formatter.name(), e);
         }
     }
 }

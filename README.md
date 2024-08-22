@@ -27,3 +27,28 @@ If you want to perform a dry-run, you can pass the `--dry-run` (`-d`) flag.
 ```sh
 trunk fmt --dry-run
 ```
+
+### `check`
+
+The `check` command is used to perform static analysis. It currently supports the following static analysers:
+* [`phpstan`](https://phpstan.org/)
+* [`psalm`](https://psalm.dev/)
+* [`phan`](https://github.com/phan/phan)
+
+To run the static analyser on your entire project, use the following command:
+
+```sh
+trunk check
+```
+
+If you wish to statically analyse a single file, use the following command:
+
+```sh
+trunk check ./src/Container/Container.php
+```
+
+Some projects might choose to use multiple static analysers for different reasons. If that is the case on your project, you can pass a comma-separated list of tools to run with the `--using` (`-u`) option. They will be executed in the order provided.
+
+```sh
+trunk check --using=phpstan,psalm
+```

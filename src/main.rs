@@ -1,11 +1,13 @@
 use clap::{Parser, Subcommand};
 use clap_verbosity_flag::Verbosity;
-use cmd::fmt::{fmt, FmtCommand};
+use cmd::{check::{check, CheckCommand}, fmt::{fmt, FmtCommand}};
 
 mod fmt;
 mod utils;
+mod check;
 mod cmd {
     pub mod fmt;
+    pub mod check;
 }
 
 #[derive(Parser)]
@@ -21,6 +23,7 @@ struct Cli {
 #[derive(Subcommand)]
 enum Command {
     Fmt(FmtCommand),
+    Check(CheckCommand),
 }
 
 fn main() {
@@ -28,5 +31,6 @@ fn main() {
 
     match &args.command {
         Command::Fmt(command) => fmt(command),
+        Command::Check(command) => check(command),
     }
 }
