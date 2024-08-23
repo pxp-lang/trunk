@@ -18,7 +18,7 @@ composer global require pxp/trunk
 
 Installing this package will ask for a plugin named `pact-foundation/composer-downloads-plugin` is allowed to execute code. Answer **`y`** to this as it is responsible for downloading the appropriate binaries for your system.
 
-Once installed, consult the [Commands][#commands] section below and start using Trunk!
+Once installed, consult the [Commands](#commands) section below and start using Trunk!
 
 ## Commands
 
