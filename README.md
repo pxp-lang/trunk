@@ -16,13 +16,9 @@ Install Trunk using Composer:
 composer global require pxp/trunk
 ```
 
-**Cargo**
+Installing this package will ask for a plugin named `pact-foundation/composer-downloads-plugin` is allowed to execute code. Answer **`y`** to this as it is responsible for downloading the appropriate binaries for your system.
 
-If you have a Rust development environment setup on your machine, you can install Trunk using Cargo:
-
-```sh
-cargo install pxp-trunk
-```
+Once installed, consult the [Commands][#commands] section below and start using Trunk!
 
 ## Commands
 
