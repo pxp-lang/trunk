@@ -70,3 +70,27 @@ Some projects might choose to use multiple static analysers for different reason
 ```sh
 trunk check --using=phpstan,psalm
 ```
+
+### `test`
+
+The `test` command is used to execute any form of test. It currently supports the following test runners:
+* [`phpunit`](https://phpunit.de/index.html)
+* [`pest`](https://pestphp.com/)
+
+To run your tests, use the following command:
+
+```sh
+trunk test
+```
+
+If you wish to execute a particular test, or directory of tests, use the following command:
+
+```sh
+trunk test ./path/to/Test.php
+```
+
+In certain scenarios, you might want to pass additional arguments to the underlying command. You can do this by placing additional arguments after a `--` symbol. All additional arguments will be forwarded to the underlying test runner.
+
+```sh
+trunk test -- --parallel
+```
