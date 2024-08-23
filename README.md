@@ -1,6 +1,10 @@
 # Trunk
 
-Trunk is a command-line application that makes it silly-simple to manage and develop PHP applications.
+As developers, it's very rare that we're working on a single project with a known, memorable set of tools. Some of our projects might be using PHPStan, others might be using Psalm. We might have older projects running PHP-CS-Fixer, but our newer ones are running Pint.
+
+What if it didn't matter anymore? What if you could instead use a single command and have it work for all of your projects? Introducing **Trunk**.
+
+Trunk provides a set of commands that handle the difficult things for you. You can use the same set of commands on all of your projects, regardless of the tools being used.
 
 ## Commands
 
