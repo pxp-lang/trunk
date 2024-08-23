@@ -135,6 +135,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "pxp-trunk"
+version = "0.0.1"
+dependencies = [
+ "clap",
+ "clap-verbosity-flag",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -158,14 +166,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "trunk"
-version = "0.0.1"
-dependencies = [
- "clap",
- "clap-verbosity-flag",
 ]
 
 [[package]]

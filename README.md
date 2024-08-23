@@ -6,6 +6,24 @@ What if it didn't matter anymore? What if you could instead use a single command
 
 Trunk provides a set of commands that handle the difficult things for you. You can use the same set of commands on all of your projects, regardless of the tools being used.
 
+## Installation
+
+**Composer (recommended)**
+
+Install Trunk using Composer:
+
+```
+composer global require pxp/trunk
+```
+
+**Cargo**
+
+If you have a Rust development environment setup on your machine, you can install Trunk using Cargo:
+
+```sh
+cargo install pxp-trunk
+```
+
 ## Commands
 
 ### `fmt`

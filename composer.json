@@ -1,0 +1,45 @@
+{
+    "name": "pxp/trunk",
+    "description": "The all-in-one tool for managing and developing PHP projects.",
+    "type": "project",
+    "bin": "bin/trunk",
+    "authors": [
+        {
+            "name": "Ryan Chandler",
+            "email": "support@ryangjchandler.co.uk",
+            "homepage": "https://ryangjchandler.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://pxplang.org",
+    "source": {
+        "url": "https://github.com/pxp-lang/trunk",
+        "type": "git",
+        "reference": "main"
+    },
+    "require": {
+        "pact-foundation/composer-downloads-plugin": "^2.1"
+    },
+    "extra": {
+        "downloads": {
+            "trunk": {
+                "url": "https://github.com/pxp-lang/trunk/releases/download/{$version}/trunk-{$arch}-{$os}.tar.gz",
+                "path": "bin",
+                "version": "v0.0.1",
+                "variables": {
+                    "{$arch}": "strtolower(php_uname('m')) == 'arm64' ? 'aarch64' : 'x86_64'",
+                    "{$os}": "PHP_OS_FAMILY == 'Linux' ? 'linux-unknown-gnu' : 'apple-darwin'"
+                },
+                "executable": [
+                    "bin/trunk"
+                ]
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pact-foundation/composer-downloads-plugin": true
+        }
+    }
+}
