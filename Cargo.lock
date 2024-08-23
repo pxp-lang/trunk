@@ -136,7 +136,7 @@ dependencies = [
 
 [[package]]
 name = "pxp-trunk"
-version = "0.0.3"
+version = "0.0.4"
 dependencies = [
  "clap",
  "clap-verbosity-flag",
