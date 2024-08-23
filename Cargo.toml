@@ -1,5 +1,10 @@
 [package]
 name = "pxp-trunk"
+description = "The all-in-one tool for managing and developing PHP projects."
+documentation = "https://github.com/pxp-lang/trunk/README.md"
+homepage = "https://pxplang.org"
+repository = "https://github.com/pxp-lang/trunk"
+license = "MIT"
 version = "0.0.1"
 edition = "2021"
 
