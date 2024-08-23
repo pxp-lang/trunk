@@ -5,6 +5,7 @@ use clap::Parser;
 use crate::{test::get_supported_test_runners, utils::cwd};
 
 #[derive(Parser)]
+#[clap(about = "Run tests.")]
 pub struct TestCommand {
     #[clap(trailing_var_arg = true, allow_hyphen_values = true, hide = true)]
     args: Vec<String>,

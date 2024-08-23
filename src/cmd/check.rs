@@ -5,6 +5,7 @@ use clap::Parser;
 use crate::{check::get_supported_checkers, utils::cwd};
 
 #[derive(Parser)]
+#[clap(about = "Run static analysis.")]
 pub struct CheckCommand {
     #[clap(help = "The path to a file or directory to check.")]
     path: Option<PathBuf>,
