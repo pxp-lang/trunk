@@ -22,6 +22,18 @@ Once installed, consult the [Commands](#commands) section below and start using 
 
 ## Commands
 
+### `info`
+
+The `info` command outputs a list of information about the current project. It is capable of telling you the following things:
+* PHP version.
+* Laravel/Symfony/WordPress version.
+* Installed Composer packages w/ absolute version.
+* Environment variables loaded and resolved from `.env` (if present).
+
+```sh
+trunk info
+```
+
 ### `fmt`
 
 The `fmt` command makes it easy to format PHP code in your project. It currently has support for the following formatters:
