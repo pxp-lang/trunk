@@ -1,5 +1,6 @@
 pub mod php;
 pub mod project;
+pub mod packages;
 
 #[derive(Debug)]
 pub struct InfoSection {
