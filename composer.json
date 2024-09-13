@@ -26,7 +26,7 @@
             "trunk": {
                 "url": "https://github.com/pxp-lang/trunk/releases/download/{$version}/trunk-{$arch}-{$os}.tar.gz",
                 "path": "bin",
-                "version": "v0.1.0",
+                "version": "v0.1.1",
                 "variables": {
                     "{$arch}": "strtolower(php_uname('m')) == 'arm64' ? 'aarch64' : 'x86_64'",
                     "{$os}": "PHP_OS_FAMILY == 'Linux' ? 'linux-unknown-gnu' : 'apple-darwin'"
